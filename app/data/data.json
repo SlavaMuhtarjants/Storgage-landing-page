@@ -1,0 +1,44 @@
+{
+	"features": [
+	{
+		"imagePath" : "../img/icon-save-money.svg",
+		"title" : "Save Money",
+		"description" : "More affordable than other storage options and self-storage units."
+	},
+	{
+		"imagePath" : "../img/icon-neighborhood.svg",
+		"title" : "Stay Local",
+		"description" : "Store your stuff in convenient locations - including right in your own neighborhood!"
+	},
+	{
+		"imagePath" : "../img/icon-storage.svg",
+		"title" : "Make Money",
+		"description" : "Put empty closets, bedrooms, and garages,  to work for you and generate extra income!"
+	},
+	{
+		"imagePath" : "../img/icon-mobile-app.svg",
+		"title" : "Easy to Manage",
+		"description" : "Unlike other sharing economy services, you'll have far less  contact with customers."
+	}],
+	"overviews": [
+	{
+		"modifier" : "1",
+		"title" : "Post Listings",
+		"description" : "Pick the size, type and location of your listing, and add a photo to attract renters."
+	},
+	{
+		"modifier" : "2",
+		"title" : "Intuitive Map",
+		"description" : "Explore the most convenient Storgage options nearby."
+	},
+	{
+		"modifier" : "3",
+		"title" : "Negotiate Terms",
+		"description" : "Put empty closets, bedrooms, and garages, to work for you and generate extra income."
+	},
+	{
+		"modifier" : "4",
+		"title" : "Secure Communications",
+		"description" : "Securely communicate with users via the Storgage app."
+	}]
+}

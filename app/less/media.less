@@ -1,0 +1,35 @@
+// Sizes
+@desktop: 1365px;
+@tablet: 960px;
+@portreit: 640px;
+@mobile: 320px;
+@scrollbar: 30px;
+
+// Desktop
+@media (min-width:(@desktop + @scrollbar)) {
+	.message('Desktop');
+}
+// Tablet
+@media (max-width:(@desktop + @scrollbar)) {
+	.message('Tablet');
+
+	.container {
+		width: @tablet;
+	}
+}
+// Portreit
+@media (max-width:(@tablet + @scrollbar)) {
+	.message('Portreit');
+
+	.container {
+		width: @portreit;
+	}
+}
+// Mobile
+@media (max-width:(@portreit + @scrollbar)) {
+	.message('Mobile');
+
+	.container {
+		width: @mobile;
+	}
+}

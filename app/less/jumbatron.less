@@ -1,0 +1,41 @@
+.jumbatron {
+	background-color: Grey;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: @white;
+	.image-2x('../img/img-featured.jpg', 1366px, 640px);
+
+	&__container {
+		width: 690px;
+		margin: 104px 0 62px;
+	}
+	&__image {
+		width: 278.5px;
+		height: 62px;
+		background-size: 278.5px 62px;
+	}
+	&__title {
+		font-size: 50px;
+		color: @white;
+		text-transform: uppercase;
+		.neoTech;
+		font-weight: normal;
+		margin: 35px 0 16px;
+		letter-spacing: -2.2px;
+		line-height: 60px;
+	}
+	&__text {
+		.openSans;
+		font-size: 20px;
+		margin: 0 0 30px;
+		padding: 0 20px;
+		letter-spacing: -0.2px;
+	}
+}

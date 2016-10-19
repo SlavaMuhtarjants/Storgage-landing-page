@@ -1,0 +1,22 @@
+.input {
+	width: 380px;
+	height: 55px;
+	border: solid transparent 1px;
+	.openSans;
+	font-size: 19.9px;
+	text-align: left;
+	color: @dark-grey;
+	padding-left: 19.3px;
+	transition: border 0.3s;
+
+	&::selection {
+		color: @white;
+		background-color: @orange;
+	}
+	&:focus {
+		border: solid 1px @orange;
+	}
+	&::placeholder {
+		color: @grey;
+	}
+}

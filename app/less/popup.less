@@ -1,0 +1,47 @@
+.popup {
+	text-align: center;
+	background-color: @white;
+	padding: 16px;
+	color: @dark-grey;
+
+	&__close {
+		width: 22px;
+		height: 22px;
+		background-image: url('../img/icon-x.svg');
+		display: block;
+		float: right;
+		background-size: 22px 22px;
+	}
+	&__close:hover {
+		opacity: @opacity;
+	}
+	&__clearfix {
+		.clearfix;
+	}
+	&__container {
+		margin: 28px 0 54px;
+		padding: 0 110px;
+		width: 565px;
+	}
+	&__title {
+		.neoTech;
+		font-size: 24px;
+		margin-bottom: 14px;
+		margin-top: 32px;
+		letter-spacing: 0.4px;
+	}
+	&__text {
+		.openSans;
+		font-size: 20px;
+		margin: -5px 0 17px;
+		letter-spacing: -0.15px;
+	}
+	&__text::after {
+		content: '';
+		height: 1px;
+		width: 74%;
+		border-bottom: solid @orange 2px;
+		display: inline-block;
+		margin-top: 26px;
+	}
+}
