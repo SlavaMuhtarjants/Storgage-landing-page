@@ -24,7 +24,8 @@
 	</div>
 	<div class="overlay"></div>
 	<div class="popup-holder">
-		{{>popup title="Thank you for signing up!" message="Please check your email to confirm your email address." }}
+		{{!-- {{>popup title="Thank you for signing up!" message="Please check your email to confirm your email address." }} --}}
+		{{>popup-error title="An error has occurred" message="This email is already registered. Try another one." }}
 	</div>
 	<script src="js/plugins.min.js"></script>
 	<script src="js/app.js?v={{timestamp}}"></script>

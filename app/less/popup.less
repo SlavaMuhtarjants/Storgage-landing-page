@@ -36,6 +36,9 @@
 		margin: -5px 0 17px;
 		letter-spacing: -0.15px;
 	}
+	&__text_error {
+		color: @red;
+	}
 	&__text::after {
 		content: '';
 		height: 1px;
@@ -43,5 +46,8 @@
 		border-bottom: solid @orange 2px;
 		display: inline-block;
 		margin-top: 26px;
+	}
+	&__text_error::after {
+		width:0;
 	}
 }
