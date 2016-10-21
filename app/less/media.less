@@ -3,11 +3,20 @@
 @tablet: 960px;
 @portreit: 640px;
 @mobile: 320px;
+
+@desktop-padding: 122px;
+@tablet-padding: 50px;
+@portreit-padding: 20px;
+
 @scrollbar: 30px;
 
 // Desktop
 @media (min-width:(@desktop + @scrollbar)) {
 	.message('Desktop');
+
+	.documentation{
+		padding: 0 @desktop-padding;
+	}
 }
 // Tablet
 @media (max-width:(@desktop + @scrollbar)) {
@@ -16,6 +25,9 @@
 	.container {
 		width: @tablet;
 	}
+	.documentation{
+		padding: 0 @tablet-padding;
+	}
 }
 // Portreit
 @media (max-width:(@tablet + @scrollbar)) {
@@ -23,6 +35,9 @@
 
 	.container {
 		width: @portreit;
+	}
+	.documentation{
+		padding: 0 @portreit-padding;
 	}
 }
 // Mobile
