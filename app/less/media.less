@@ -1,50 +1,70 @@
 // Sizes
 @desktop: 1365px;
 @tablet: 960px;
-@portreit: 640px;
+@portrait: 640px;
 @mobile: 320px;
 
-@desktop-padding: 122px;
-@tablet-padding: 50px;
-@portreit-padding: 20px;
+@doc-desktop-padding: 122px;
+@doc-tablet-padding: 50px;
+@doc-portrait-padding: 20px;
+
+@column-desktop-margin: 350px;
+@column-tablet-margin: 150px;
 
 @scrollbar: 30px;
 
 // Desktop
 @media (min-width:(@desktop + @scrollbar)) {
-	.message('Desktop');
+	//.message('Desktop');
 
 	.documentation{
-		padding: 0 @desktop-padding;
+		padding: 0 @doc-desktop-padding;
+	}
+	.column{
+		margin: 0 @column-desktop-margin;
 	}
 }
 // Tablet
 @media (max-width:(@desktop + @scrollbar)) {
-	.message('Tablet');
+	//.message('Tablet');
 
 	.container {
 		width: @tablet;
 	}
 	.documentation{
-		padding: 0 @tablet-padding;
+		padding: 0 @doc-tablet-padding;
+	}
+	.column{
+		margin: 0 @column-tablet-margin;
 	}
 }
-// Portreit
+// portrait
 @media (max-width:(@tablet + @scrollbar)) {
-	.message('Portreit');
+	//.message('portrait');
 
 	.container {
-		width: @portreit;
+		width: @portrait;
 	}
 	.documentation{
-		padding: 0 @portreit-padding;
+		padding: 0 @doc-portrait-padding;
+	}
+	.column{
+		width: @min-width;
+		margin: inherit;
 	}
 }
 // Mobile
-@media (max-width:(@portreit + @scrollbar)) {
-	.message('Mobile');
+@media (max-width:(@portrait + @scrollbar)) {
+	//.message('Mobile');
 
 	.container {
+		width: @mobile;
+	}
+	.column{
+		margin: 0;
+		width: @mobile;
+	}
+	.input, .button{
 		width: @mobile;
 	}
 }

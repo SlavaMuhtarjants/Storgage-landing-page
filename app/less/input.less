@@ -1,5 +1,5 @@
 .input {
-	width: 380px;
+	width: @min-width;
 	height: 55px;
 	border: solid transparent 1px;
 	.openSans;
@@ -9,6 +9,9 @@
 	padding-left: 19.3px;
 	transition: border 0.3s;
 
+	&_grey {
+		border: solid 1px @dark-grey;
+	}
 	&::selection {
 		color: @white;
 		background-color: @orange;

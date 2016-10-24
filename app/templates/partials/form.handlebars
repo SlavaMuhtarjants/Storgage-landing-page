@@ -1,8 +1,10 @@
 <div class="form">
+	{{#each inputs }}
+		<div class="form__row">
+			{{>input type=type placeholder=placeholder modifier=modifier }}
+		</div>
+	{{/each}}
 	<div class="form__row">
-		{{>input type="email" placeholder="Your email"}}
-	</div>
-	<div class="form__row">
-		{{>button text="Register for Beta"}}
+		{{>button text=buttonText}}
 	</div>
 </div>

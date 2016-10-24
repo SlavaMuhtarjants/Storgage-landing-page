@@ -1,5 +1,5 @@
 .button {
-	width: 380px;
+	width: @min-width;
 	height: 55px;
 	border: none;
 	color: @white;
@@ -7,12 +7,15 @@
 	font-size: 24.9px;
 	font-weight: 600;
 	letter-spacing: 0.7px;
+	display: inline-block;
+	text-decoration: none;
 	cursor: pointer;
+	line-height: 55px;
+	padding: 0;
+	text-align: center;
+	background-color: @orange;
 
-	&_sign-up {
-		background-color: @orange;
-	}
-	&_sign-up:hover {
+	&:hover {
 		background-color: @orange-hover;
 	}
 }

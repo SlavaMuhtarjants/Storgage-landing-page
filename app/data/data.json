@@ -40,5 +40,21 @@
 		"modifier" : "4",
 		"title" : "Secure Communications",
 		"description" : "Securely communicate with users via the Storgage app."
+	}],
+	"inputsLanding": [
+	{
+		"type": "email",
+		"placeholder": "Your email"
+	}],
+	"inputsPassword": [
+	{
+		"type": "password",
+		"placeholder": "Password",
+		"modifier": "input_grey"
+	},
+	{
+		"type": "password",
+		"placeholder": "Confirm password",
+		"modifier": "input_grey"
 	}]
 }
